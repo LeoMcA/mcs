@@ -1,0 +1,272 @@
+@import "normalize.css";
+@import "960.css";
+
+/* =============================================================================
+   General Stuff
+   ========================================================================== */
+
+body {
+	font-size: 16px;
+	line-height: 24px;
+	font-family: Georgia;
+	color: #4b4742;
+	/*background: url(../baseline.png);*/
+	background: url(../img/background.png) repeat-x;
+	border-top: 2px solid #676767;
+}
+
+a, a:link, a:visited, a:active, a:visited {
+	color: #447bc4;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #39508c;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	font-weight: normal;
+	color: #484848;
+}
+
+h1 {
+	font-size: 31px;
+	line-height: 48px;
+}
+
+h2 {
+	font-size: 25px;
+	line-height: 48px;
+}
+
+h3 {
+	font-size: 20px;
+	line-height: 24px;
+}
+
+p {
+	margin: 0 0 24px;
+	color: #666666;
+	text-align: justify;
+}
+
+small {
+	font-size: 12px;
+}
+
+/* =============================================================================
+   Header
+   ========================================================================== */
+
+div.logo {
+	padding: 12px 0;
+	font: 24px "Trebuchet MS";
+}
+
+div.logo img {
+	height: 48px;
+	width: auto;
+	float: left;
+	margin: 0 12px 0 0;
+}
+
+div.tab {
+	float: right;
+	font: 12px "Trebuchet MS";
+}
+
+div.tab ul {
+	margin: 10px;
+	padding: 0;
+	float: left;
+	list-style: none;
+}
+
+div.tab ul li {
+	display: inline;
+	margin: 0 5px;
+}
+
+div.tab a.mozilla {
+	float: right;
+	display: block;
+	height: 49px;
+	width: 118px;
+	background: url(../img/mozilla-tab.png) 100% 0 no-repeat;
+	text-indent: -200px;
+	overflow: hidden;
+}
+
+div.navbar {
+	background: -moz-linear-gradient(#2E89CA, #1B5898);
+	box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1), 0 -2px 0 rgba(0, 0, 0, 0.5) inset;
+	border-radius: 5px;
+	font-family: "Trebuchet MS";
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+	margin-bottom: 24px;
+	padding-bottom: 2px;
+}
+
+div.navbar a, div.navbar a:link, div.navbar a:visited, div.navbar a:active {
+	color: #ffffff;
+	font-weight: bold;
+}
+
+div.navbar ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: inline;
+}
+
+div.navbar li {
+	display: inline;
+	padding: 9px 0 11px;
+}
+
+div.navbar li:first-child a {
+	display: inline-block;
+	border-radius: 5px 0 0 5px;
+}
+
+div.navbar li:last-child {
+	border-right-color: rgba(255, 255, 255, 0.15);
+    border-right: 1px solid #5373B0;
+}
+
+div.navbar li a {
+	display: inline-block;
+	padding: 9px 20px;
+    border-left-color: rgba(255, 255, 255, 0.15);
+    border-right-color: rgba(0, 0, 0, 0.2);
+    border-left: 1px solid #5373B0;
+    border-right: 1px solid #2F508C;
+}
+
+div.navbar li a:hover {
+	background: #1B5898;
+	text-decoration: none;
+	text-shadow: none;
+}
+
+div.navbar a:active {
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+div.navbar input {
+    background: url("../img/search.png") no-repeat scroll 8px center #FFFFFF;
+    border: 0 none;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.4) inset;
+    float: right;
+    font: 16px "Trebuchet MS",sans-serif;
+    padding: 6px 6px 6px 32px;
+    margin: 5px;
+    width: 172px;
+}
+
+div.navbar input:-moz-placeholder {
+    color: #AAAAAA;
+}
+
+/* =============================================================================
+   Content
+   ========================================================================== */
+
+div.title {
+	font-size: 12px;
+}
+
+div.title h1 {
+	font-size: 39px;
+	line-height: 48px;
+	display: inline;
+}
+
+div.title div.author {
+	float: right;
+	text-align: right;
+}
+
+div.title div.author div {
+	float: right;
+}
+
+div.title div.author a {
+	display: block;
+	text-align: right;
+	font-size: 16px;
+}
+
+div.title div.author img {
+	height: 48px;
+	width: auto;
+	margin-left: 10px;
+	float: right;
+}
+
+div.title div.desc {
+	display: block;
+	margin-bottom: 24px;
+}
+
+/* =============================================================================
+   Sidebar
+   ========================================================================== */
+
+div.sidebar {
+	background: #ffffff;
+	border: 1px solid #d7d9e8;
+	border-radius: 6px;
+	box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05), 0 -2px 0 rgba(0, 0, 0, 0.05) inset;
+	padding: 11px 16px 12px;
+	margin: 0 0 35px;
+	text-align: justify;
+}
+
+div.sidebar h1 {
+	font-family: "Trebuchet MS";
+	font-size: 20px;
+	line-height: 24px;
+	margin-bottom: 12px;
+}
+
+div.sidebar ul {
+	margin: 0;
+	padding: 0 0 0 15px;
+}
+
+/* =============================================================================
+   Footer
+   ========================================================================== */
+
+footer {
+	background: url(../img/footer_background.png);
+	margin-top: -119px;
+	padding: 144px 0 24px;
+	color: #476fbe;
+	font-size: 12px;
+}
+
+footer a:link, footer a:visited {
+	color: #669be1;
+}
+
+footer a:hover, footer a:active {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+footer div.notice {
+	text-align: justify;
+}
+
+footer div.notice img {
+	width: 220px;
+	height: auto;
+}
